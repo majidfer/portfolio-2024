@@ -6,7 +6,11 @@ const Contact = () => {
       <h1 className="py-4 text-4xl font-bold text-center text-[#001b5e]">
         Contact
       </h1>
-      <form action="" method="POST" encType="multipart/form-data">
+      <form
+        action="https://getform.io/f/byvpplma"
+        method="POST"
+        encType="multipart/form-data"
+      >
         <div className="grid md:grid-cols-2 gap-4 w-full py-2">
           <div className="flex flex-col">
             <label className="uppercase text-sm py-2" htmlFor="name">
@@ -54,7 +58,7 @@ const Contact = () => {
               id="subject"
             />
           </div>
-          <div className="flex flex-col py-2">
+          <div className="flex flex-col md:col-span-2 py-2">
             <label className="uppercase text-sm py-2" htmlFor="message">
               Message
             </label>
@@ -65,6 +69,12 @@ const Contact = () => {
               rows="10"
             ></textarea>
           </div>
+          <button
+            type="submit"
+            className="bg-[#001b5e] text-gray-100 p-4 font-bold rounded-lg md:col-span-2"
+          >
+            Send message
+          </button>
         </div>
       </form>
     </div>
