@@ -7,14 +7,15 @@ import pic4 from "../assets/pic4.jpg";
 
 const Projects = () => {
   return (
-    <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
+    <div id="projects" className="max-w-[1040px] m-auto md:pl-20 p-4">
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">
-        Projects
+        A Showcase of My Projects
       </h1>
       <p className="text-center py-8">
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea doloribus
-        commodi saepe ipsam eaque. Non ducimus hic, minus, aliquam iure ex
-        magnam odit repellat eos ab sapiente dolores nobis fugit.
+        Here are some of the projects I've worked on, showcasing my skills in
+        web development, design, and more. These projects demonstrate my ability
+        to create functional and visually appealing applications, utilizing a
+        range of technologies and frameworks.
       </p>
       <div className="grid sm:grid-cols-2 gap-12">
         <ProjectItem img={pic1} title="Project 1" />

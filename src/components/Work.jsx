@@ -3,39 +3,32 @@ import WorkItem from "./WorkItem";
 
 const data = [
   {
-    year: 2022,
-    title: "Product Manager",
-    duration: "1 year",
+    year: "2023 - Present",
+    title: "Co-founder at PT Aksamaia Rekta Nusa, Indonesia",
+    duration: "1 year 3 months",
     details:
-      "Led the development and launch of a new mobile application, coordinating with cross-functional teams.",
+      "Co-founded and led a startup focusing on Web Development, Data Analysis, and Market Research . Coordinated with cross-functional teams manage business operations, and drove strategic growth initiatives.",
+  },
+  {
+    year: 2022,
+    title: "Trainee Full Stack Developer at Northcoders, United Kingdom",
+    duration: "4 months",
+    details:
+      "Participated in an intensive training program to develop full-stack web development skills. Gained hands-on experience in developing and maintaining web applications using JavaScript, React, and Node.js.",
   },
   {
     year: 2021,
-    title: "Data Analyst",
-    duration: "1.5 years",
-    details:
-      "Analyzed large datasets to provide actionable insights for business decisions using Python and SQL.",
-  },
-  {
-    year: 2020,
-    title: "Marketing Specialist",
+    title: "Associate at Amazon Fulfillment Center, United Kingdom",
     duration: "2 years",
     details:
-      "Implemented and optimized digital marketing strategies, resulting in a 20% increase in online sales.",
+      "Worked in a fast-paced Amazon fulfillment center, ensuring efficient handling of inventory. Responsibilities included shipping customer orders, problem solving related to the inventory, maintaining a high level of accuracy and productivity.",
   },
   {
-    year: 2019,
-    title: "Software Engineer",
-    duration: "2 years",
+    year: 2017,
+    title: "Account Manager at PT Sangkuriang Internasional, Indonesia",
+    duration: "3 years",
     details:
-      "Developed and maintained web applications using JavaScript, React, and Node.js.",
-  },
-  {
-    year: 2018,
-    title: "Graphic Designer",
-    duration: "1 year",
-    details:
-      "Created visual content for marketing campaigns, including social media graphics and website banners.",
+      "Managed a portfolio of client accounts, ensuring client satisfaction and retention. Developed and maintained strong relationships with clients, identified opportunities for upselling and cross-selling services.",
   },
 ];
 
@@ -43,15 +36,17 @@ const Work = () => {
   return (
     <div id="work" className="max-w-[1040px] m-auto md:pl-20 p-4 py-16">
       <h1 className="text-4xl font-bold text-center text-[#001b5e]">Work</h1>
-      {data.map((item, idx) => (
-        <WorkItem
-          key={idx}
-          year={item.year}
-          title={item.title}
-          duration={item.duration}
-          details={item.details}
-        />
-      ))}
+      <div className="py-8">
+        {data.map((item, idx) => (
+          <WorkItem
+            key={idx}
+            year={item.year}
+            title={item.title}
+            duration={item.duration}
+            details={item.details}
+          />
+        ))}
+      </div>
     </div>
   );
 };
